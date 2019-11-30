@@ -13,7 +13,7 @@ const path = {
     dist: {
         self: "dist/",
         css: "dist/css/",
-        js: "dist/js/*.js",
+        js: "dist/js/",
         img: "dist/img/**/*",
     },
 
@@ -30,7 +30,7 @@ const buildSCSS = () => (
         .pipe(autoprefixer({
             cascade: false
         }))
-        .pipe(minifyCSS({compability: "ie8"}))
+        .pipe(minifyCSS({compatibility: "ie8"}))
         .pipe(concat("style.min.css"))
         .pipe(gulp.dest(path.dist.css))
 );
