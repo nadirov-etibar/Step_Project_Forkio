@@ -1,0 +1,51 @@
+.button{
+  background-color: #8d81ac;
+  border: none;
+  color: white;
+  border-radius: 2rem;
+  padding: .8rem 2.6rem;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: absolute;
+}
+.mynav{
+  background-color: #27262a;
+  &__button{
+    right: 1rem;
+  }
+}
+.navbar-toggler{
+  border:none;
+  &__line{
+  width: 15.55px;
+  height: 2px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 3px auto;
+}
+  &__line-first{
+   width: 11px;
+   margin-left: 4.5px;
+ }
+}
+.mynav-link{
+  color: #8d81ac;
+}
+
+.mycontainer{
+  background-image: url("../img/img_bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  &__text{
+    color: #8d81ac;
+    font-size: 1.3rem;
+  }
+  &__textTwo{
+    font-size: 1rem;
+    margin-bottom: 15rem;
+  }
+}
+.download-button{
+  top: 25.7rem;
+}
