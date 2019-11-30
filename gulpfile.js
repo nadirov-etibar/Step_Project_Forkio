@@ -13,8 +13,8 @@ const path = {
     dist: {
         self: "dist/",
         css: "dist/css/",
-        js: "dist/js/*.js",
-        img: "dist/img/**/*",
+        js: "dist/js/",
+        img: "dist/img/",
     },
 
     src: {
@@ -30,14 +30,16 @@ const buildSCSS = () => (
         .pipe(autoprefixer({
             cascade: false
         }))
-        .pipe(minifyCSS({compability: "ie8"}))
+        .pipe(minifyCSS({compatibility: "ie8"}))
         .pipe(concat("style.min.css"))
         .pipe(gulp.dest(path.dist.css))
 );
 
 const buildJS = () => (
     gulp.src(path.src.js)
-        .pipe(concat("script.js"))
+        .pipe(concat("script.min.js"))
+        .pipe(babel({presets: ['@babel/env']}))
+        .pipe(uglify())
         .pipe(gulp.dest(path.dist.js))
 );
 
@@ -59,19 +61,16 @@ const watcher = () => {
         }
     });
 
-    // gulp.watch(path.src.html, buildHTML).on('change', browserSync.reload);
     gulp.watch(path.src.scss, buildSCSS).on('change', browserSync.reload);
     gulp.watch(path.src.js, buildJS).on('change', browserSync.reload);
     gulp.watch(path.src.img, buildIMG).on('change', browserSync.reload);
 };
 
 /*** CREATING TASKS ***/
-// gulp.task('html', buildHTML);
 gulp.task('scss', buildSCSS);
 
 gulp.task('build', gulp.series(
     cleanDist,
-    // buildHTML,
     buildSCSS,
     buildJS,
     buildIMG,
