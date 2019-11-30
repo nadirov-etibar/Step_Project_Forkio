@@ -14,7 +14,11 @@ const path = {
         self: "dist/",
         css: "dist/css/",
         js: "dist/js/",
+<<<<<<< HEAD
         img: "dist/img/",
+=======
+        img: "dist/img/**/*",
+>>>>>>> fb677797f5e3fbc456b34a9eecead41024d86540
     },
 
     src: {
