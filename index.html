@@ -6,12 +6,96 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body>
-<div class="salam">
-    <p>asdaxsad</p>
-</div>
+<header class="header">
+<nav class="navbar navbar-expand-md mynav ">
+    <a class="navbar-brand" href="#">
+        <img src="dist/img/navbar-logo.png" alt="">
+    </a>
+    <button class="mynav__button button" >
+        buy now
+    </button>
+    <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <div class="navbar-toggler__line navbar-toggler__line-first"></div>
+        <div class="navbar-toggler__line"></div>
+        <div class="navbar-toggler__line"></div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link mynav-link" href="#">Overview </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mynav-link" href="#">About Fork</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mynav-link" href="#">Buying Options</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mynav-link" href="#">Support</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+</header>
+<main class="container-fluid main">
+    <section class="row mycontainer flex-column align-items-center">
+        <h1 class="text-white">Fork App</h1>
+        <p class="text-center mycontainer__text">A real gamechanger in the world of web development</p>
+        <p class="mycontainer__textTwo">v. 2.8 For Mac and Windows</p>
+        <button class="button download-button" >
+            Download For Free Now
+        </button>
+    </section>
+    <section class="row rev-editor">
+        <div class="text-center white_bg">
+            <h2 class="white_bg__header">Revolutionary editor</h2>
+            <p class="white_bg__text">Aenean cursus imperdiet nisl id fermentum.
+                Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.
+            </p>
+            <div class="white_bg__btn-div">
+                <button class="white_bg__btn"><i class="far fa-eye"></i>Watch</button><span class="white_bg__span">1,397</span>
+                <button class="white_bg__btn"><i class="fas fa-star"></i>star</button><span class="white_bg__span">21,038</span>
+                <button class="white_bg__btn"><i class="fas fa-code-branch"></i>fork</button><span class="white_bg__span">4,391</span>
+            </div>
+        </div>
+        <div class="grey_bg">
+            <div class="col-12 col-md-6 grey_bg__left-side">
+                <div>
+                    <img src="dist/img/icon-1.png" alt="" width="111" height="64">
+                    <div>
+                        <h3>Creatred to Make The Web Better</h3>
+                        <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim.
+                            Sed id metus id quam auctor molestie eget ut augue.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img src="dist/img/icon-1.png" alt="">
+                    <div>
+                        <h3>Creatred to Make The Web Better</h3>
+                        <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim.
+                            Sed id metus id quam auctor molestie eget ut augue.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 grey_bg__right-side">
+                <h2>< Here is what you get ></h2>
+                <img src="dist/img/editor.png" alt="" width="500" height="494">
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="dist/js/script.min.js"></script>
 </body>
 </html>

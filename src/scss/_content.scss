@@ -1,3 +1,53 @@
-.salam > p{
-  color: red;
+.white_bg{
+  background: #fff;
+  padding: 4rem 9rem;
+
+  &__header{
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #635c73;
+    margin-bottom: 1rem;
+  }
+
+  &__text{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: #5b5b5b;
+    margin-bottom: 1rem;
+  }
+
+  &__btn{
+    background: #f9f9f9;
+    color: #333333;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid #d5d5d5;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px 10px;
+  }
+
+  &__span{
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid #d5d5d5;
+    padding: 5px 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 70px;
+  }
+
+  &__btn > i{
+    margin-right: 5px;
+  }
+}
+
+.grey_bg{
+  background: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0 2rem 3rem;
 }
