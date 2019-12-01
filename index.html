@@ -6,10 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body>
+<header class="header">
 <nav class="navbar navbar-expand-md mynav ">
     <a class="navbar-brand" href="#">
         <img src="dist/img/navbar-logo.png" alt="">
@@ -40,7 +43,8 @@
         </ul>
     </div>
 </nav>
-<main class="container-fluid">
+</header>
+<main class="container-fluid main">
     <section class="row mycontainer flex-column align-items-center">
         <h1 class="text-white">Fork App</h1>
         <p class="text-center mycontainer__text">A real gamechanger in the world of web development</p>
@@ -48,6 +52,45 @@
         <button class="button download-button" >
             Download For Free Now
         </button>
+    </section>
+    <section class="row rev-editor">
+        <div class="text-center white_bg">
+            <h2 class="white_bg__header">Revolutionary editor</h2>
+            <p class="white_bg__text">Aenean cursus imperdiet nisl id fermentum.
+                Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.
+            </p>
+            <div class="white_bg__btn-div">
+                <button class="white_bg__btn"><i class="far fa-eye"></i>Watch</button><span class="white_bg__span">1,397</span>
+                <button class="white_bg__btn"><i class="fas fa-star"></i>star</button><span class="white_bg__span">21,038</span>
+                <button class="white_bg__btn"><i class="fas fa-code-branch"></i>fork</button><span class="white_bg__span">4,391</span>
+            </div>
+        </div>
+        <div class="grey_bg">
+            <div class="col-12 col-md-6 grey_bg__left-side">
+                <div>
+                    <img src="dist/img/icon-1.png" alt="" width="111" height="64">
+                    <div>
+                        <h3>Creatred to Make The Web Better</h3>
+                        <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim.
+                            Sed id metus id quam auctor molestie eget ut augue.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img src="dist/img/icon-1.png" alt="">
+                    <div>
+                        <h3>Creatred to Make The Web Better</h3>
+                        <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim.
+                            Sed id metus id quam auctor molestie eget ut augue.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 grey_bg__right-side">
+                <h2>< Here is what you get ></h2>
+                <img src="dist/img/editor.png" alt="" width="500" height="494">
+            </div>
+        </div>
     </section>
 </main>
 
