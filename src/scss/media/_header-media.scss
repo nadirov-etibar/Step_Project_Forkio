@@ -8,3 +8,20 @@
     margin: 0 auto;
   }
 }
+@media screen and (max-width : 767px){
+  .mynav__brandName {
+    display: none !important;
+  }
+  .mynav__button {
+    right: 12rem;
+  }
+}
+@media screen and (min-width : 767px) and (max-width: 1200px){
+  .navbar-nav {
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
+  .mynav{
+    padding: 1.5rem 2rem;
+  }
+}
