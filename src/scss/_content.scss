@@ -59,7 +59,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   &__left-text{
@@ -90,5 +90,88 @@
 
   &__img-editor{
     width: calc(100% + 15px);
+  }
+}
+
+.last-section{
+  background-image: url("../img/lastBg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -1px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  //align-items: center;
+
+  &__header{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 36px;
+  }
+
+  &__card-div{
+    display: flex;
+  }
+
+  &__cards{
+    width: 257px;
+   background: rgba(255, 255, 255, .2);
+    display: flex;
+    margin-right: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__cards:last-child{
+    margin-right: 0;
+  }
+
+  &__name{
+    color: #ffffff;
+    background: rgba(255, 255, 255, .2);
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+
+  &__price{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 58px;
+  }
+
+  &__price::before{
+    content: "\0024";
+  }
+
+  &__time{
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(255, 255, 255, .2);
+  }
+
+  &__license{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+  }
+
+  &__btn{
+    color: #fff;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    background: rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    padding: 15px 30px;
+    text-transform: uppercase;
   }
 }
