@@ -13,21 +13,13 @@
 </head>
 <body>
 <header class="header">
-<nav class="navbar navbar-expand-md mynav ">
+<nav class="navbar mynav ">
     <a class="navbar-brand mynav__brand" href="#">
         <img src="dist/img/navbar-logo.png" alt="">
         <p class="d-inline-flex mynav__brandName">FORKIO</p>
     </a>
-    <button class="mynav__button button" >
-        buy now
-    </button>
-    <div class="navbar-toggler toggler-example mynav__burger" data-toggle="collapse" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="mynav__burger-line mynav__burger-line-first"></div>
-        <div class="mynav__burger-line"></div>
-        <div class="mynav__burger-line"></div>
-    </div>
-    <div class="collapse navbar-collapse mynav__menu">
-        <ul class="navbar-nav">
+    <div class="mynav__menu">
+        <ul class="navbar-nav mynav__menu-list">
             <li class="nav-item">
                 <a class="nav-link mynav__link" href="#">Overview </a>
             </li>
@@ -39,6 +31,30 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link mynav__link" href="#">Support</a>
+            </li>
+        </ul>
+    </div>
+    <button class="mynav__button button" >
+        buy now
+    </button>
+
+
+    <div class="mynav__burger">
+        <div class="mynav__burger-line "></div>
+        <div class="mynav__burger-line"></div>
+        <div class="mynav__burger-line"></div>
+        <ul class="navbar-nav mynav__burger-menu">
+            <li class="nav-item mynav__burger-list">
+                <a class="nav-link mynav__burger-link" href="#">Overview </a>
+            </li>
+            <li class="nav-item mynav__burger-list">
+                <a class="nav-link mynav__burger-link" href="#">About Fork</a>
+            </li>
+            <li class="nav-item mynav__burger-list">
+                <a class="nav-link mynav__burger-link" href="#">Buying Options</a>
+            </li>
+            <li class="nav-item mynav__burger-list">
+                <a class="nav-link mynav__burger-link" href="#">Support</a>
             </li>
         </ul>
     </div>
@@ -135,8 +151,8 @@
                     <img style="height:50px;width:148px;" src="dist/img/logo-2.png" class="secondBg__images" alt="...">
                 </div>
                 <div class="card-body">
-                    <p class="card-text text-white text-center secondBg__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
-                        Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+                    <p class="card-text text-white text-center secondBg__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum,
+                        rhoncus molestie neque ac, mollis eleifend nibh. </p>
                 </div>
             </div>
             <div class="col mb-4">
@@ -144,8 +160,8 @@
                     <img style="height:64px;width:64px;" src="dist/img/logo-3.png" class="secondBg__images" alt="...">
                 </div>
                 <div class="card-body">
-                    <p class="card-text text-white text-center secondBg__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
-                        Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+                    <p class="card-text text-white text-center secondBg__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla,
+                        imperdiet nibh. Morbi tempus auctor felis ac vehicula.  </p>
                 </div>
             </div>
             <div class="col mb-4">
@@ -162,8 +178,8 @@
                     <img style="height:34px;width:166px;" src="dist/img/logo-5.png" class="secondBg__images" alt="...">
                 </div>
                 <div class="card-body">
-                    <p class="card-text text-white text-center secondBg__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
-                        Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+                    <p class="card-text text-white text-center secondBg__text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa.
+                        Nulla faucibus lorem id arcu consequat faucibus.  </p>
                 </div>
             </div>
             <div class="col mb-4">
@@ -171,11 +187,14 @@
                     <img style="height:34px;width:108px;" src="dist/img/logo-6.png" class="secondBg__images" alt="...">
                 </div>
                 <div class="card-body">
-                    <p class="card-text text-white text-center secondBg__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
-                        Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+                    <p class="card-text text-white text-center secondBg__text">Fusce pharetra erat id odio blandit, nec
+                        pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum. </p>
                 </div>
             </div>
         </div>
+        <div class="secondBg__bottom"><p class="">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh.
+            Donec eget elit eu libero tincidunt consequat nec elementum orci.
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p></div>
     </section>
     <section class="row last-section">
         <div class="last-section__text">
