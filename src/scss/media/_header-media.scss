@@ -6,9 +6,6 @@
     width: 1200px;
     margin: 0 auto;
   }
-  .mynav__menu{
-    margin-left: 120px!important;
-  }
 }
 @media screen and (max-width: 481px) {
   .secondBg__bottom{
@@ -34,6 +31,14 @@
   .mynav__brandName {
       display: none !important;
     }
+  .download-button__btn{
+    padding: 14px 30px;
+  }
+}
+@media screen and (min-width : 768px){
+  .download-button__btn{
+    padding: 20px 60px;
+  }
 }
 @media screen and (min-width : 768px) and (max-width: 992px){
   .mycontainer__header{
@@ -45,7 +50,7 @@
       display: none;
     }
       &__menu{
-        width: 63%;
+        width: 70%;
         display: flex;
         justify-content: center;
         position: absolute;
@@ -65,7 +70,7 @@
     }
     &__menu {
       display: flex;
-      margin-left: 150px;
+      margin-left: 169px;
     }
   }
 }

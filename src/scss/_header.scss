@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
+    font-size: 14px;
   }
   &__link{
     color: #8d81ac;
@@ -52,10 +53,11 @@
   &__burger-menu{
     display: none;
     position: absolute;
+    font-size: 19px;
     width: 90%;
     background-color: #333333;
-    height: 19rem;
-    top: 4.2rem;
+    height: 26rem;
+    top: 5.7rem;
     left: 50%;
     transform: translate(-50%, 0);right: 0;
   }
@@ -64,7 +66,7 @@
   }
   &__burger-link{
     color: white;
-    padding: 1.7rem 1rem!important;
+    padding: 2rem 3rem!important;
     font-weight: 400;
   }
 }
@@ -85,8 +87,8 @@
   content: '';
   position: absolute;
   border-right: 8px solid #8d81ac;
-  height: 50px;
-  top: 10px;
+  height: 44px;
+  top: 7px;
 }
 
 
