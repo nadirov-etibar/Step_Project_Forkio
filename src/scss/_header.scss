@@ -1,20 +1,33 @@
-.button{
-  outline: none !important;
-  background-color: #8d81ac;
-  border: none;
-  color: white;
-  border-radius: 2rem;
-  padding: .8rem 2.6rem;
-  font-size: 15px;
-  text-transform: capitalize;
-  font-weight: 700;
-  position: absolute;
-}
+//************** havanise   ************//
+
 .mynav{
-  padding: .5rem 2rem;
+  padding: .5rem 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   background-color: #27262a;
+  &__button{
+    outline: none !important;
+    background-color: #8d81ac;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    padding: .8rem 2.6rem;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  &__menu{
+    display: none;
+  }
+  &__menu-list{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  &__link{
+    color: #8d81ac;
+    padding: 0 .5rem!important;
+  }
   &__brand{
     display: flex;
   }
@@ -25,18 +38,6 @@
     color: #8d81ac;
     font-family: "Lato", sans-serif
   }
-  &__menu{
-    justify-content: flex-end;
-    right: 12rem;
-    position: absolute;
-    display: none;
-  }
-  &__button{
-    right: 2rem;
-  }
-  &__burger{
-    border:none;
-  }
   &__burger-line{
     width: 15.55px;
     height: 2px;
@@ -44,21 +45,48 @@
     border-radius: 5px;
     margin: 3px auto;
 }
-  &__burger-line-first{
+  &__burger-line:nth-child(1){
     width: 11px;
     margin-left: 4.5px;
   }
-  &__link{
-    font-size: 16px;
-    color: #8d81ac;
+  &__burger-menu{
+    display: none;
+    position: absolute;
+    width: 90%;
+    background-color: #333333;
+    height: 19rem;
+    top: 4.2rem;
+    left: 50%;
+    transform: translate(-50%, 0);right: 0;
+  }
+  &__burger-list{
+    border-bottom: 1px solid #3b3b3b;
+  }
+  &__burger-link{
+    color: white;
+    padding: 1.7rem 1rem!important;
+    font-weight: 400;
   }
 }
-.mynav__burger:hover + .mynav__menu{
-      display: block;
+.mynav__burger:hover {
+  .mynav__burger-menu {
+    display: block;
+    z-index: 1;
+  }
 }
-
-.nav-item:hover{
-  background-color: #f5f5f5;
+.mynav__burger-list:hover{
+  .mynav__burger-link{
+    color: #8d81ac;
+  }
+  position: relative;
+  color: #8d81ac;
+  }
+.mynav__burger-list:hover::before {
+  content: '';
+  position: absolute;
+  border-right: 8px solid #8d81ac;
+  height: 50px;
+  top: 10px;
 }
 
 

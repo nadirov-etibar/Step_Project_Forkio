@@ -1,6 +1,8 @@
 //*************** havanise **********************//
 .mycontainer{
   background-image: url("../img/img_bg.jpg");
+  position: relative;
+  height: 584px;
   background-size: cover;
   background-position: bottom;
   &__header{
@@ -20,11 +22,10 @@
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     color: #50555d;
-    margin-bottom: 400px;
   }
 }
 .download-button{
-  top: 644px;
+  top: 560px;
   position: absolute;
   font-family: "Montserrat", sans-serif;
   &__btn{
@@ -144,13 +145,14 @@
 
 //*************** havanise **********************//
 .secondBg{
-  background-image: url("../img/secondBg.jpg");
+  background-image: url("../img/secondBg768.png");
   background-size: cover;
   padding: 0 0.7rem;
+  position: relative;
   &__header{
-    padding: 3.6rem 0;
+    padding: 3rem 0;
     width: 100%;
-    font-size: 38px;
+    font-size: 1.8rem;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     text-align: center;
@@ -164,10 +166,26 @@
   &__imageDiv{
     display: flex;
     justify-content: center;
-    height: 70px;
+    height: 65px;
+  }
+  &__bottom{
+    color: #918094;
+    font-size: 14px;
+    padding: 2rem 8rem;
+    text-align: center;
+  }
+  .card-body{
+    padding: 1rem;
   }
 }
-
+.secondBg::after{
+  content: "";
+  position: absolute;
+  width: 70%;
+  margin-left: 14%;
+  bottom: 30px;
+  border-bottom: 3px solid #645766;
+}
 
 //*************** etibar **********************//
 .last-section{
