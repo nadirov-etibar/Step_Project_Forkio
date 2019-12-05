@@ -8,7 +8,7 @@
   &__button{
     outline: none !important;
     background-color: #8d81ac;
-    border: none;
+    border: 1px solid #8d81ac;
     color: white;
     border-radius: 2rem;
     padding: .8rem 2.6rem;
@@ -68,6 +68,31 @@
     color: white;
     padding: 2rem 3rem!important;
     font-weight: 400;
+  }
+  &__hide {
+    display:none
+  }
+}
+.mynav__link:hover{
+  color: white;
+}
+.mynav__button:hover{
+  background-color: white;
+  color: #8d81ac;
+}
+.download-button__btn:hover{
+  background-color: white;
+  color: #8d81ac;
+}
+.mynav__brand:hover{
+  .mynav__brandName {
+    color: white;
+  }
+  .mynav__image{
+    display: none;
+  }
+  .mynav__hide{
+    display: inline-block;
   }
 }
 .mynav__burger:hover {
