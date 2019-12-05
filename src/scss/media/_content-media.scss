@@ -48,9 +48,16 @@
       display: none;
     }
   }
+
+  .last-section{
+    &__header{
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
+@media screen and (min-width: 768px) and (max-width: 991px){
   .grey_bg{
     &__header{
       display: block;
@@ -60,6 +67,15 @@
 
     &__right-header{
       display: none;
+    }
+  }
+
+  .last-section{
+    &__card-div{
+      flex-wrap: wrap;
+    }
+    &__cards {
+      width: 257px;
     }
   }
 }
