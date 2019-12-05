@@ -1,4 +1,5 @@
 const gulp = require("gulp"),
+    deploy = require('gulp-gh-pages'),
     sass = require("gulp-sass"),
     concat = require("gulp-concat"),
     babel = require("gulp-babel"),
@@ -43,6 +44,11 @@ const buildJS = () => (
         .pipe(gulp.dest(path.dist.js))
 );
 
+const buildDeploy = () => (
+    gulp.src("./dist/**/*")
+        .pipe(deploy())
+);
+
 const buildIMG =  () => (
     gulp.src(path.src.img)
         .pipe(imagemin())
@@ -74,5 +80,6 @@ gulp.task('build', gulp.series(
     buildSCSS,
     buildJS,
     buildIMG,
+    buildDeploy,
     watcher
 ));
