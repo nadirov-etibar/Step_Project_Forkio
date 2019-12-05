@@ -45,7 +45,7 @@ const buildJS = () => (
 );
 
 const buildDeploy = () => (
-    gulp.src("./dist/**/*")
+    gulp.src(path.dist.self)
         .pipe(deploy())
 );
 
