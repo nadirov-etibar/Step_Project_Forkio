@@ -262,7 +262,7 @@
 
   .black-transparent{
     width: 299px;
-    height: 480px;
+    height: 540px;
     background: rgba(0, 0, 0, .2);
     .last-section__name{
       background: rgba(0, 0, 0, .2);
@@ -271,6 +271,12 @@
 
     .last-section__price{
       font-size: 68px;
+    }
+
+    .last-section__btn{
+      font-size: 16px;
+      padding: 17px 35px;
+
     }
   }
 
@@ -342,6 +348,12 @@
     padding: 15px 30px;
     text-transform: uppercase;
     margin-bottom: 1.4rem;
+    font-weight: 700;
+  }
+
+  &__btn:hover{
+    background: #cecbcf;
+    color: #7f6d78;
   }
 }
 
