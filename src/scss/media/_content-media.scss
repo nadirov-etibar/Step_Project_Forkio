@@ -42,6 +42,7 @@
     &__left-text{
       width: 100%;
       padding: 2rem 1.5rem;
+      margin-right: 0;
     }
 
     &__right-header{
@@ -54,6 +55,48 @@
       font-size: 2.5rem;
       text-align: center;
     }
+
+    &__name{
+      padding: 2rem;
+    }
+
+    &__price{
+      margin: 4rem 0 3rem 0;
+    }
+
+    &__time{
+      margin-bottom: 3rem;
+    }
+
+    &__time::after{
+      top: 2rem;
+    }
+
+    &__btn{
+      margin-bottom: 2.4rem;
+    }
+    .black-transparent{
+      width: 299px;
+      height: 480px;
+      background: rgba(0, 0, 0, .2);
+      .last-section__name{
+        background: rgba(0, 0, 0, .2);
+        padding: 3rem;
+      }
+
+      .last-section__price{
+        font-size: 68px;
+      }
+    }
+  }
+
+  .secondBg__bottom{
+    display: none;
+  }
+  .secondBg::after{
+    width: 90%;
+    margin-left: 4%;
+    bottom: 12px;
   }
 }
 
@@ -71,11 +114,20 @@
   }
 
   .last-section{
-    &__card-div{
+    &__main-card-div{
       flex-wrap: wrap;
     }
     &__cards {
       width: 257px;
     }
+  }
+
+  .secondBg__bottom {
+    padding: 3rem 2rem;
+  }
+  .secondBg::after{
+    width: 90%;
+    margin-left: 4%;
+    bottom: 18px;
   }
 }

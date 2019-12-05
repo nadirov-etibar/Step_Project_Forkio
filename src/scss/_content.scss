@@ -225,12 +225,18 @@
     margin: 2rem;
   }
 
-  &__card-div{
+  &__main-card-div{
     display: flex;
     align-items: center;
     padding-bottom: 3rem;
     width: 100%;
     justify-content: center;
+  }
+
+  &__card-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
   }
 
   &__cards{
@@ -252,6 +258,7 @@
 
   .black-transparent{
     width: 299px;
+    height: 480px;
     background: rgba(0, 0, 0, .2);
     .last-section__name{
       background: rgba(0, 0, 0, .2);

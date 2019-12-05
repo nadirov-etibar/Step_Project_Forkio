@@ -7,26 +7,7 @@
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 481px) {
-  .secondBg__bottom{
-    display: none;
-  }
-  .secondBg::after{
-    width: 90%;
-    margin-left: 4%;
-    bottom: 12px;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 993px) {
-  .secondBg__bottom {
-    padding: 3rem 2rem;
-  }
-  .secondBg::after{
-    width: 90%;
-    margin-left: 4%;
-    bottom: 18px;
-  }
-}
+
 @media screen and (max-width : 767px){
   .mynav__brandName {
       display: none !important;
