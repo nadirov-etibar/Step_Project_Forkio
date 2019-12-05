@@ -161,15 +161,19 @@
 }
 
 //*************** havanise **********************//
+.my-card{
+  margin: 0;
+}
 .secondBg{
   background-image: url("../img/secondBg768.png");
   background-size: cover;
+  background-position: 100%;
   padding: 0 0.7rem;
   position: relative;
   &__header{
     padding: 3rem 0;
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 36px;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     text-align: center;
